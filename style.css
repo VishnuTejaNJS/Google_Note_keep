@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+body{
+  background: #B3E5FC;
+  scroll-behavior: smooth;
+}
+header{
+  background: #0D47A1;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+h1{
+  color: white;
+}
+#deleteAllNotes{
+  margin: 10px 0;
+  background: #f4513e;
+  color: aliceblue;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#deleteAllNotes:hover{
+  cursor: pointer;
+  transform: scale(1.07);
+}
+.notesList{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.note{
+  background: #448AFF;
+  border: 1.5px solid white;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem;
+  color: aliceblue;
+}
+.note:hover{
+  cursor: pointer;
+  transform: scale(1.07);
+}
+.note button{
+  background-color: #f4513e;
+  color: aliceblue;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.note button:hover{
+  cursor: pointer;
+  transform: scale(1.07);
+}
+.createNote{
+  background: #40C4FF;
+  border: 1.5px solid white;
+  padding: 1rem;
+  width: 50vw;
+  margin-left: 290px;
+  margin-top: 10px;
+  border-radius: 12px;
+}
+input,textarea{
+  display: block;
+  outline: none;
+  border: none;
+  border-bottom: 1.5px solid white;
+  margin: 15px;
+  background-color: #40C4FF;
+  color: aliceblue;
+  width: 90%;
+  font-size: 1rem;
+}
+::placeholder {
+  color: aliceblue;
+}
+
+h2{
+  color:#00897B;
+  margin: 10px 10px;
+}
+#createNoteButton{
+  background: #0277BD;
+  color: aliceblue;
+  padding: 10px;
+  margin: 10px 10px;
+  border: 1.5px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#createNoteButton:hover{
+  cursor: pointer;
+  transform: scale(1.07);
+}
+@media(min-width:367px){
+  header{
+    padding: 1rem;
+  }
+  h1{
+    font-size: 1.8rem;
+    margin-top: 8px;
+  }
+  #deleteAllNotes{
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+  .notesList{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .createNote{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 83vw;
+  }
+}
+@media(min-width:767px){
+  .notesList{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  h2{
+    margin: 0 15px;
+  }
+  .createNote{
+    width: 50vw;
+    margin-left: 290px;
+    margin-top: 10px;
+  }
+}
